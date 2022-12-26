@@ -3,6 +3,28 @@ height: 500px;
 width: 1000px;
 }
 
+
 body{
+    
     font-family: 'Raleway', sans-serif;
+}
+
+.metin{
+    background-color: #c1c1c1;
+}
+
+.ayrac{
+    border: none;
+    border-top: 4px solid #343a40;
+    max-width: 250px;
+    margin: 25px auto;   
+}
+
+.icon{
+    color: #343a40;
+    position: relative;
+    top: -60px;
+    font-size: 40px;
+    border: 10px solid #c1c1c1;
+    background-color: #c1c1c1;
 }
