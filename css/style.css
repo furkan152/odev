@@ -1,6 +1,7 @@
 .menuslayt{
 height: 500px;
 width: 1000px;
+
 }
 
 
@@ -27,4 +28,149 @@ body{
     font-size: 40px;
     border: 10px solid #c1c1c1;
     background-color: #c1c1c1;
+    text-align: center;
 }
+.iconbey{
+    color: #343a40;
+    position: relative;
+    top: -60px;
+    font-size: 40px;
+    border: 10px solid #ffffff;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#contact{
+    
+    background-color:#c1c1c1;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact .well{
+    margin-top:0px;
+    border-radius:0;
+}
+
+#contact .form-control{
+    border-radius: 0;
+    border:2px solid #1e1e1e;
+}
+
+#contact button{
+    border-radius:0;
+    border:2px solid #1e1e1e;
+}
+
+#contact .row{
+    margin-bottom:30px;
+}
+
+@media (max-width: 768px) { 
+    #contact iframe {
+        margin-bottom: 15px;
+    }
+    
+}
+
+.resim1{
+    width: 1300px;
+    margin:auto;
+    }
+    .sola-kaydir{
+    float:left;
+    padding:0 10px 10px 0;
+    }
+
+    .resim2{
+        width: 1300px;
+        margin:auto;
+        }
+        .saga-kaydir{
+        float:right;
+        padding:0 0 10px 10px;
+        }
+
+        .resim3{
+            width: 1300px;
+            margin:auto;
+            }
+            .saga-kaydir{
+            float:right;
+            padding:0 0 10px 10px;
+            }
+
+            .resim4{
+                width: 1300px;
+                margin:auto;
+                }
+                .sola-kaydir{
+                float:left;
+                padding:0 0 10px 10px;
+}     
+
+
+.breadcrumbs {
+    border: 1px solid #cbd2d9;
+    border-radius: 0.3rem;
+    display: inline-flex;
+    overflow: hidden;
+  }
+  
+  .breadcrumbs__item {
+    background: #fff;
+    color: #333;
+    outline: none;
+    padding: 0.75em 0.75em 0.75em 1.25em;
+    position: relative;
+    text-decoration: none;
+    transition: background 0.2s linear;
+  }
+  
+  .breadcrumbs__item:hover:after,
+  .breadcrumbs__item:hover {
+    background: #edf1f5;
+  }
+  
+  .breadcrumbs__item:focus:after,
+  .breadcrumbs__item:focus,
+  .breadcrumbs__item.is-active:focus {
+    background: #323f4a;
+    color: #fff;
+  }
+  
+  .breadcrumbs__item:after,
+  .breadcrumbs__item:before {
+    background: #bebebe;
+    bottom: 0;
+    clip-path: polygon(50% 50%, -50% -50%, 0 100%);
+    content: "";
+    left: 100%;
+    position: absolute;
+    top: 0;
+    transition: background 0.2s linear;
+    width: 1em;
+    z-index: 1;
+  }
+  
+  .breadcrumbs__item:before {
+    background: #cbd2d9;
+    margin-left: 1px;
+  }
+  
+  .breadcrumbs__item:last-child {
+    border-right: none;
+  }
+  
+  .breadcrumbs__item.is-active {
+    background: #bebebe;
+  }
+
+ 
+  .figure:hover{
+    opacity: 0.8;
+  }
+
+  .figure {
+width: 300;
+height: 300;
+  }
