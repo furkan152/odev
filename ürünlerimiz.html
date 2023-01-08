@@ -41,7 +41,19 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">PREFABRİK YAŞAM</a>
+        <a class="navbar-brand" href="#"
+          >PREFABRİK YAŞAM
+          <!--Breadcrums Başlangıç-->
+          <nav class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs__item">Anasayfa</a>
+            <a href="hakkımızda.html" class="breadcrumbs__item">Hakkımızda</a>
+            <a href="galeri.html" class="breadcrumbs__item">Galeri</a>
+            <a href="ürünlerimiz.html" class="breadcrumbs__item is-active"
+              >Ürünlerimiz</a
+            >
+          </nav>
+          <!--Breadcrums Bitiş-->
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -85,15 +97,21 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="#Prefabrik Evler"
+                  <a
+                    class="dropdown-item"
+                    href="ürünlerimiz.html#prefabrikevler"
                     >Prefabrik Evler</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#Çelik Evler">Çelik Evler</a>
+                  <a class="dropdown-item" href="ürünlerimiz.html#celikevler"
+                    >Çelik Evler</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#Konteynerlar">Konteynerlar</a>
+                  <a class="dropdown-item" href="ürünlerimiz.html#konteynerlar"
+                    >Konteynerlar</a
+                  >
                 </li>
               </ul>
             </li>
@@ -104,20 +122,9 @@
 
     <!--Menü bitişş-->
 
-    <!--Breadcrums Başlangıç-->
-    <nav class="breadcrumbs">
-      <a href="index.html" class="breadcrumbs__item">Anasayfa</a>
-      <a href="hakkımızda.html" class="breadcrumbs__item">Hakkımızda</a>
-      <a href="galeri.html" class="breadcrumbs__item">Galeri</a>
-      <a href="ürünlerimiz.html" class="breadcrumbs__item is-active"
-        >Ürünlerimiz</a
-      >
-    </nav>
-    <!--Breadcrums Bitiş-->
-
     <!--Prefabrik evlerimiz bölümü başlangıç-->
     <section class="p-1 text-center metin">
-      <div class="container">
+      <div id="prefabrikevler" class="container">
         <h1 class="mb-5 font-weight-bold">Prefabrik Evlerimiz</h1>
         <hr class="ayrac" />
         <i class="fa-solid fa-house-chimney icon"></i>
@@ -272,7 +279,7 @@
 
     <!--Çelik evlerimiz bölümü Başlangıç-->
     <section class="p-1 text-center metin">
-      <div class="container">
+      <div id="celikevler" class="container">
         <h1 class="mb-5 font-weight-bold">Çelik Evlerimiz</h1>
         <hr class="ayrac" />
         <i class="fa-solid fa-house-chimney icon"></i>
@@ -425,7 +432,7 @@
 
     <!--Konteyner bölümü Başlangıç-->
     <section class="p-1 text-center metin">
-      <div class="container">
+      <div id="konteynerlar" class="container">
         <h1 class="mb-5 font-weight-bold">Konteynerlar</h1>
         <hr class="ayrac" />
         <i class="fa-solid fa-house-chimney icon"></i>
