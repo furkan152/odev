@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ürünlerimiz</title>
+    <title>Galeri</title>
 
     <script type="text/javascript" src="js/prototype.js"></script>
     <script
@@ -45,9 +45,19 @@
   <body>
     <!--Menü başlangıç-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">PREFABRİK YAŞAM</a>
+        <a class="navbar-brand" href="#"
+          >PREFABRİK YAŞAM
+          <!--Breadcrums Başlangıç-->
+          <nav class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs__item">Anasayfa</a>
+            <a href="hakkımızda.html" class="breadcrumbs__item">Hakkımızda</a>
+            <a href="galeri.html" class="breadcrumbs__item is-active">Galeri</a>
+            <a href="ürünlerimiz.html" class="breadcrumbs__item">Ürünlerimiz</a>
+          </nav>
+          <!--Breadcrums Bitiş-->
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -91,15 +101,21 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="#Prefabrik Evler"
+                  <a
+                    class="dropdown-item"
+                    href="ürünlerimiz.html#prefabrikevler"
                     >Prefabrik Evler</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#Çelik Evler">Çelik Evler</a>
+                  <a class="dropdown-item" href="ürünlerimiz.html#celikevler"
+                    >Çelik Evler</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#Konteynerlar">Konteynerlar</a>
+                  <a class="dropdown-item" href="ürünlerimiz.html#konteynerlar"
+                    >Konteynerlar</a
+                  >
                 </li>
               </ul>
             </li>
@@ -110,19 +126,10 @@
 
     <!--Menü bitişş-->
 
-    <!--Breadcrums Başlangıç-->
-    <nav class="breadcrumbs">
-      <a href="index.html" class="breadcrumbs__item">Anasayfa</a>
-      <a href="hakkımızda.html" class="breadcrumbs__item">Hakkımızda</a>
-      <a href="galeri.html" class="breadcrumbs__item is-active">Galeri</a>
-      <a href="ürünlerimiz.html" class="breadcrumbs__item">Ürünlerimiz</a>
-    </nav>
-    <!--Breadcrums Bitiş-->
-
     <!--Galeri Başlangıç-->
 
-    <section class="p-5 text-center galeri">
-      <h2 class="mb-5 font-weight-bold">Galeri</h2>
+    <section class="text-center galeri">
+      <h2 class="mb-5 font-weight-bold pading">Galeri</h2>
       <hr class="ayrac" />
       <i class="fa-solid fa-house-chimney iconbey"></i>
     </section>
@@ -203,6 +210,6 @@
 
     <!--Fotoraf büyütmek için gerekli-->
 
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
