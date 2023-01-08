@@ -463,7 +463,8 @@
 
           <div class="col-md-5">
             <h4><strong>İletişim Formu</strong></h4>
-            <form>
+            <p>(Her kutucuğu doğru doldurduğunuzdan emin olun)</p>
+            <form onsubmit="return validateForm()">
               <div class="form-group">
                 <input
                   type="text"
@@ -500,12 +501,7 @@
                 ></textarea>
               </div>
 
-              <button
-                class="btn btn-default"
-                type="submit"
-                name="button"
-                onClick='alert("Mesajınız alınmıştır.En yakın zamanda dönüş sağlanacaktır.")'
-              >
+              <button class="btn btn-default" type="submit" name="button">
                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Gönder
               </button>
             </form>
@@ -524,6 +520,7 @@
       </p>
     </div>
 
+    <script src="script/script.js"></script>
     <!--FOOTER KISMI BİTİŞ-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
