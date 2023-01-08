@@ -1,4 +1,3 @@
-//getting all required elements
 const gallery = document.querySelectorAll(".image"),
   previewBox = document.querySelector(".preview-box"),
   previewImg = previewBox.querySelector("img"),
@@ -64,3 +63,38 @@ window.onload = () => {
     };
   }
 };
+
+//Form kontrol işlemi BAŞLANGIÇ
+
+function validateForm() {
+  var isValid = true;
+
+  // Formdaki tüm alanları kontrol et
+  var inputs = document.getElementsByTagName("input");
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].value == "") {
+      isValid = false;
+      inputs[i].classList.add("error");
+    } else {
+      inputs[i].classList.remove("error");
+    }
+  }
+
+  // Telefon alanını kontrol et
+  var phoneInput = document.getElementById("phone");
+  var phone = phoneInput.value;
+  var phoneRegex = /^[0-9]+$/;
+  if (!phoneRegex.test(phone)) {
+    alert("Lütfen geçerli bir telefon numarası girin!");
+    return false;
+  }
+
+  // Formda hata varsa uyarı mesajı göster
+  if (!isValid) {
+    alert("Lütfen tüm alanları doldurun!");
+  }
+
+  return isValid;
+}
+
+//Form kontrol işlemi BİTİŞ
