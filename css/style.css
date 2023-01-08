@@ -6,6 +6,9 @@
 body {
   font-family: "Raleway", sans-serif;
 }
+.pading {
+  padding-top: 100px;
+}
 
 .metin {
   background-color: #c1c1c1;
@@ -118,15 +121,16 @@ body {
 }
 
 .breadcrumbs {
-  border: 1px solid #cbd2d9;
+  padding-top: 0px;
+  border: 0px;
   border-radius: 0.3rem;
   display: inline-flex;
   overflow: hidden;
 }
 
 .breadcrumbs__item {
-  background: #fff;
-  color: #333;
+  background-color: #bebebe;
+  color: rgb(255, 255, 255);
   outline: none;
   padding: 0.75em 0.75em 0.75em 1.25em;
   position: relative;
@@ -148,7 +152,7 @@ body {
 
 .breadcrumbs__item:after,
 .breadcrumbs__item:before {
-  background: #bebebe;
+  background: #636363;
   bottom: 0;
   clip-path: polygon(50% 50%, -50% -50%, 0 100%);
   content: "";
@@ -170,7 +174,7 @@ body {
 }
 
 .breadcrumbs__item.is-active {
-  background: #bebebe;
+  background: #7e7e7e;
 }
 
 .wrapper {
@@ -179,6 +183,7 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  background-color: #c1c1c1;
 }
 .gallery .image {
   padding: 7px;
@@ -279,7 +284,6 @@ body {
   display: none;
   background: rgba(0, 0, 0, 0.45);
 }
-
 @media (max-width: 1000px) {
   .gallery .image {
     width: calc(100% / 2);
